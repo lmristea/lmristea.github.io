@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +15,7 @@
       --accent1: #ffc58f;
       --accent2: #ebbbff;
       --accent3: #99ffff;
+      --accent4: #ebffb3;
       --muted: #7285b7;
     }
 
@@ -56,14 +58,28 @@
       color: var(--accent3);
     }
 
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: var(--accent3);
+    }
+
+    li {
+      padding-bottom: 10px;
+    }
+
     .job-title {
       color: var(--accent2);
       font-weight: bold;
       margin-top: 10px;
     }
 
+    .tech-stack {
+      color: var(--accent4);
+    }
+
     .date {
-      float: right;
+      float: left;
       color: var(--muted);
       font-style: italic;
     }
@@ -90,6 +106,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
@@ -102,49 +119,112 @@
     <section>
       <h2>Summary</h2>
       <p>
-        Lucia is an emerging full-stack software developer with a focus on backend technologies including Python and Java. While still growing her expertise in backend development, she is enthusiastic about expanding her skills into front-end technologies. Passionate about continuous learning, Lucia enjoys experimenting with new tools and frameworks through proof of concepts. She is also dedicated to mentoring and supporting her colleagues, helping them grow both personally and professionally.
+        Lucia is an emerging full-stack software developer with a focus on backend technologies including Python and
+        Java. While still growing her expertise in backend development, she is enthusiastic about expanding her skills
+        into front-end technologies. Passionate about continuous learning, Lucia enjoys experimenting with new tools and
+        frameworks through proof of concepts. She is also dedicated to mentoring and supporting her colleagues, helping
+        them grow both personally and professionally.
       </p>
     </section>
 
     <section>
       <h2>Professional Experience</h2>
 
-      <h3>JP Morgan Chase: Software Engineer <span class="date">Aug 2020 – Present</span></h3>
+      <h3>JP Morgan Chase: Software Engineer</h3>
+      <h4 class="date">Aug 2020 – Present</h4>
       <div class="clear"></div>
 
       <p class="job-title">Global Tax Technology – Full Stack Developer</p>
+      <div class="tech-stack">Tech stack: Java Spring Boot, Angular, AWS</div>
       <ul>
-        <li>Tech stack: Java Spring Boot, Angular, AWS</li>
-        <li>Developed and maintained RESTful and GraphQL APIs, integrating with Angular front-end.</li>
-        <li>Worked with CI/CD pipelines using Jules and Terraform for AWS.</li>
-        <li>Updated tech stack dependencies for security and performance.</li>
+        <li>Developed and maintained RESTful and GraphQL APIs, collaborating with stakeholders to refine requirements
+          and integrate with Angular front-end components and ensure seamless functionality from front-end to back-end
+          and reliable deployment
+        </li>
+        <li>Gained hands-on experience with CI/CD pipelines using Jules (Jenkins-based) to automate build, testing, and
+          deployment across Dev, Test, and Prod environments while also learning how to troubleshoot deployment issues
+          to streamline the build and deployment process
+        </li>
+        <li>Learned about the Terraform IAAS platform and maintained Terraform configuration files for provisioning
+          services in AWS, ensuring consistent infrastructure management and environment deployment
+        </li>
+        <li>Focused on maintaining technical hygiene by regularly updating tech stack dependencies to ensure security
+          and performance, aligning with evolving project needs
+        </li>
       </ul>
 
       <p class="job-title">Operational Insights – Data Engineering</p>
+      <div class="tech-stack">Tech stack: Python, SQL (Trino/Presto), Apache Airflow</div>
       <ul>
-        <li>Tech stack: Python, SQL (Trino/Presto), Apache Airflow</li>
-        <li>Modernized ETL jobs, created workflows, and built Flask APIs.</li>
-        <li>Designed React MVP front-end and created dashboards with Python Panel.</li>
-        <li>Automated Tableau extractions and built reporting tools with Python.</li>
+        <li>Modernized legacy ETL jobs and created new workflows using Apache Airflow and Astronomer (Python), enhancing
+          data processing efficiency
+        </li>
+        <li>
+          Onboarded customers' custom tables and views to a federated data product via API, migrating from legacy data
+          sources for improved integration
+        </li>
+
+        <li>
+          Developed additional API endpoints in a Flask application, facilitating seamless data access for customers
+        </li>
+
+        <li>
+          Designed and developed an MVP for the front-end of the data product using React, providing a user-friendly
+          interface for stakeholders
+        </li>
+        <li>
+          Implemented POC dashboards with Python Panel, offering an alternative to Power BI for visualizing key data
+          insights
+        </li>
+        <li>
+          Automated data processing from Tableau dashboards using Python and SQL, providing stakeholders with actionable
+          summaries of their applications
+        </li>
+        <li>
+          Built a Python application to generate automated reports for stakeholders, identifying failed application
+          changes and sending detailed alerts to reduce error rates
+        </li>
       </ul>
 
-      <p class="job-title">Internship Project Lead / Mentor</p>
+      <p class="job-title">Operational Insights– 2024 Internship Project Lead / Mentor</p>
+      <div class="tech-stack">Tech stack: Python (Flask), React</div>
       <ul>
-        <li>Tech stack: Python (Flask), React</li>
-        <li>Managed and mentored summer interns building a full-stack application.</li>
-        <li>Led planning, technical guidance, and reviews throughout the project.</li>
+        <li>
+          Led and organized the team’s internship program, managing workload and project priorities for a group of
+          summer interns to produce a web application using Python Flask and React
+        </li>
+        <li>
+          Advised interns on best practices for building web applications and provided guidance on technical solutions
+          and problem-solving, while also exposing them to the full software development lifecycle
+        </li>
       </ul>
 
-      <p class="job-title">UI Developer</p>
+      <p class="job-title">Operational Insights– UI Developer</p>
+      <div class="tech-stack">Tech stack: Angular, JavaScript, HTML, CSS</div>
       <ul>
-        <li>Tech stack: Angular, JavaScript, HTML, CSS</li>
-        <li>Enhanced UI features and mentored new hires and interns on front-end tech.</li>
+        <li>
+          Developed and enhanced UI features for the organization’s web application, improving the overall user
+          experience and functionality
+        </li>
+        <li>
+          Gained hands-on experience with Spring backend while focusing on Angular front-end development
+        </li>
+        <li>
+          Co-led a summer internship program focused on UI skills, organizing program events and mentoring interns on
+          their mobile/web application projects
+        </li>
+        <li>
+          Onboarded and mentored new hires in the JPMC Software Engineer Program, helping them integrate into the team
+          and
+          supporting their technical growth
+        </li>
       </ul>
 
-      <h3>JP Morgan Chase: Strategic Internship Program <span class="date">May 2019 – May 2020</span></h3>
+      <h3>JP Morgan Chase: Strategic Internship Program</h3>
+      <h4 class="date">May 2019 – May 2020</h4>
       <div class="clear"></div>
+      <div class="tech-stack">Tech stack: Python, C#</div>
       <ul>
-        <li>Tech stack: Python, C#</li>
         <li>Created a codebase efficiency reporting tool using Python automation.</li>
         <li>Developed immersive VR projects for the Diversity & Inclusion team with Unity.</li>
       </ul>
@@ -152,10 +232,12 @@
 
     <section>
       <h2>Education</h2>
-      <p><strong class="job-title">Otterbein University</strong> – B.S. in Computer Science <span class="date">2017 – 2020</span></p>
+      <p><strong class="job-title">Otterbein University</strong> – B.S. in Computer Science</p>
+      <h4 class="date">2017 – 2020</h4>
       <div class="clear"></div>
       <p>GPA: 3.7 | Minor: Art Studio</p>
     </section>
   </div>
 </body>
+
 </html>
